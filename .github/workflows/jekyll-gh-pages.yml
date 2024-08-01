@@ -19,8 +19,13 @@ jobs:
       - name: Build Project
         run: git config user.name "pagapo" && git config user.email "paulogarcia001@hotmail.com" && cd fe && yarn deploy
       - name: Build and Deploy
-        uses: JamesIves/github-pages-deploy-action@v4.4.3
+        uses: actions/upload-pages-artifact@v2
         with:
-          branch: main # The branch the action should deploy to.
-          folder: fe/dist # The folder the action should deploy.
-          # You can specify additional configuration here as needed.
+          # Upload
+          path: '../../fe/dist'
+
+      # uses: JamesIves/github-pages-deploy-action@v4.4.3
+      #   with:
+      #     branch: main # The branch the action should deploy to.
+      #     folder: fe/dist # The folder the action should deploy.
+      #     # You can specify additional configuration here as needed.
