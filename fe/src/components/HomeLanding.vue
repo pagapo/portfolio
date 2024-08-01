@@ -18,6 +18,16 @@
       <div class="py-4" />
       <v-row>
         <v-col cols="12">
+          <v-btn
+            block
+            color="primary"
+            href="#/about"
+            large
+            outlined
+          >
+            Acerca de mí
+          </v-btn>
+
         </v-col>
       </v-row>
     </v-responsive>
