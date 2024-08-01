@@ -14,12 +14,10 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: '20.9.0'  # Use whatever node version your project requires
-
       - name: Install Dependencies
-        run: yarn install
-
+        run: cd fe && yarn install  # Use the correct path to your project and the correct command to install your dependencies.
       - name: Build Project
-        run: cd fe && yarn deploy  # Use the correct build command for your project. It may include 'dist' as part of the script in your package.json.
+        run: yarn deploy  # Use the correct build command for your project. It may include 'dist' as part of the script in your package.json.
       - name: Build and Deploy
         uses: JamesIves/github-pages-deploy-action@v4.4.3
         with:
