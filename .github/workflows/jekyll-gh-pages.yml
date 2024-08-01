@@ -15,12 +15,12 @@ jobs:
         with:
           node-version: '20.9.0'  # Use whatever node version your project requires
       - name: Install Dependencies
-        run: cd fe && yarn install  # Use the correct path to your project and the correct command to install your dependencies.
+        run: cd fe && yarn install && yarn build  # Use the correct path to your project and the correct command to install your dependencies.
       - name: Build and Deploy
         uses: actions/upload-pages-artifact@v2
         with:
           # Upload
-          path: '../../fe/dist'
+          path: 'fe/dist'
 
       # uses: JamesIves/github-pages-deploy-action@v4.4.3
       #   with:
