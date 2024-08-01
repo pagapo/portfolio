@@ -13,6 +13,7 @@
       <div class="text-center">
         <div class="text-body-2 font-weight-light mb-n1">Soy</div>
         <h1 class="text-h2 font-weight-bold">Paulo Andrés García</h1>
+        <h4 class="text-h5 font-weight-light">Desarrollador Full Stack</h4>
       </div>
       <div class="py-4" />
       <v-row>
